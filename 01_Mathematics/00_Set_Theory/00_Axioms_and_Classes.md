@@ -1,8 +1,6 @@
 # Axioms and Classes
 
-## Classes, Sets and Axioms
-
-### Statements
+## Statements
 
 In Mathematics, a statement is a declaration that can be assigned a truth value. Meaning, a statement is either true or false. It cannot be both. There is a set of rigorous logical rules used to determine the truth value of each statement. 
 
@@ -12,7 +10,7 @@ Arguments that does not respect these rules are illogical. We can also combine t
 
 Rules like these are symbolically represented in a way that words are avoided to prevent ambiguity and unnecessary confusion:
 
-> $$ [(P \implies Q) \land (Q \implies T)] \implies T $$
+> $$ [(P \Rightarrow Q) \land (Q \Rightarrow T)] \Rightarrow T $$
 
 The logical steps used to determine the whether a statement is true or false are called proofs. If the truth value of a statement can be logically deduced by combining multiple statements previously known to be true, then at some point, there must be a set of statements whose truth values not previously derived from previous statements. That is, the process must start somewhere and there must be some initial statements declared to be true rather than derived.
 
@@ -22,21 +20,21 @@ But, suppose the choice of our original set $\mathscr{A}$ of statements was not 
 
 This statement which has been determined to be both true and false is referred to as a contradiction or a paradox. If a contradictory statement logically flows from what was assumed to be a paradox-free system, then the initial statements used as the foundation of the mathematical system must be scrutinized to determine the incorrect assumptions.
 
-### Sets
+## Sets
 
 A set is a collection of objects called *elements* often described in terms of certain properties shared by each elements. These properties muse be well-defined , with no ambiguities, so that it is possible to know for certain if something belongs to the collection or not without prejudice. Being a *set* can also be an element property so sets whose elements are sets exists.
 
 There are a few ways to describe sets:
 1. **verbal method**: use a sentence to describe a set
-  - the set of all printed, 2nd edition magic the gathering cards
-  - the set that contains all the letters that make up the word "concept"
+    - the set of all printed, 2nd edition magic the gathering cards
+    - the set that contains all the letters that make up the word "concept"
 2. **roster method**: list each element of the set only once then enclose all these with opening and closing braces
-  - $\text{\{ c, e, n, o, p, t \}}$
-  - $\{ \{ \text{Head, Tail} \},\ \text{Head},\ \text{Tail},\ \emptyset \}$
+    - $\text{\{ c, e, n, o, p, t \}}$
+    - $\{ \{ \text{Head, Tail} \},\ \text{Head},\ \text{Tail},\ \emptyset \}$
 
 3. **set-builder method**: a combination of verbal and roster methods with a stand-in variable
-  - $\{ x | x\ \text{is a letter in the word concept} \}$
-  - $\{ x | x \geq 0 \}$
+    - $\{ x | x\ \text{is a letter in the word concept} \}$
+    - $\{ x | x \geq 0 \}$
 
 The way sets are defined along with their universally accepted properties from the foundation of modern mathematics. 
 
@@ -46,13 +44,13 @@ Paradoxes such as this undermines the confidence we have in mathematics, a disci
 
 But the crux is, how do we decide which assumptions are acceptable and which ones are not? This problem motivated mathematicians to determine as clearly as possible what are acceptable properties of sets. Since most of modern mathematics can be derived from the notion of sets, this question was labeled as a high priority in the early 1900s. It is in this period that particular attention was given to develop a reliable axiomatic system.
 
-### Axiomatic Systems
+## Axiomatic Systems
 
 An axiomatic system is normally set up by first declaring atomic statements or primitive concepts. These primitive concepts carry no intrinsic meaning although the symbols or words used to represent them often convey some intuitive concept in the mind of the reader. Meaning that the words representing this undefined notion are such that the user will easily understand the properties which will be prescribed for this concept.
 
 Specific rules and properties which declare how these concepts relate to each other are then formulated; these rules and properties must allow mathematical constructs which are viewed as being important in our mathematical system. These are called axioms.
 
-### Euclid's Axiomatic System
+## Euclid's Axiomatic System
 
 Euclid provided us with a useful model for constructing an axiomatic system. He is the first person to apply the axiomatic method of defining a certain field of study. In his axiomatic system, the words *line* and *point* are primitive concepts. These properties are his axioms. 
 
@@ -76,34 +74,34 @@ Euclid's postulates, indeed, could be thought of as those assumptions that were 
 In the modern practice, as in Hilbert's geometry, the first principles of any formal deductive system are "axioms," regardless of what we think about their truth -- which in many cases has been a purely conventionalistic attitude. 
 
 1. Axioms of Incidence:
-    1. For every two points A, B there exits a line a that contains each of the points A, B.
-    2. For every two points A, B there exists no more than one line that contains each of the points A, B.
+    1. For every two points $A, B$ there exits a line a that contains each of the points $A, B$.
+    2. For every two points A, B there exists no more than one line that contains each of the points $A, B$.
     3. There exist at least two points on a line. There exist at least three points that do not lie on a line.
-    4. For any three points A, B, C that do not lie on the same line there exists a plane [alpha] that contains each of the points A, B, C. For every plane there exists a point which it contains.
-    5. For any three points A, B, C that do not lie on one and the same line there exists no more than one plane that contains each of the three points A, B, C.
-    6. If two points A, B of a line a lie in a plane [alpha], then every point of a lies in the plane [alpha].
-    7. If two planes [alpha], [beta] have a point A in common, then they have at least one more point B in common.
+    4. For any three points $A, B, C$ that do not lie on the same line there exists a plane $\alpha$ that contains each of the points $A, B, C$. For every plane there exists a point which it contains.
+    5. For any three points $A, B, C$ that do not lie on one and the same line there exists no more than one plane that contains each of the three points $A, B, C$.
+    6. If two points $A, B$ of a line a lie in a plane $\alpha$, then every point of a lies in the plane $\alpha$.
+    7. If two planes $\alpha, \beta$ have a point $A$ in common, then they have at least one more point $B$ in common.
     8. There exist at least four points which do not lie in a plane.
 2. Axioms of Order:
-    1. If a point B lies between a point A and a point C, then the points A, B, C are three distinct points of a line, and B then also lies between C and A.
-    2. For two points A and C, there always exists at lest one point B on the line AC such that C lies between A and B.
+    1. If a point $B$ lies between a point $A$ and a point $C$, then the points $A, B, C$ are three distinct points of a line, and $B$ then also lies between $C$ and $A$.
+    2. For two points $A$ and $C$, there always exists at lest one point $B$ on the line $AC$ such that $C$ lies between $A$ and $B$.
     3. Of any three points on a line there exists no more than one that lies between the other two.
-    4. Let A, B, C be three points that do not lie on a line and let a be a line in the plane ABC which does not meet any of the points A, B, C. If the line a passes through a point of the segment AB, it also passes through a point of the segment AC, or through a point of the segment BC.
+    4. Let $A, B, C$ be three points that do not lie on a line and let a be a line in the plane $ABC$ which does not meet any of the points $A, B, C$. If the line a passes through a point of the segment $AB$, it also passes through a point of the segment $AC$, or through a point of the segment $BC$.
 3. Axioms of Congruence:
-    1. If A, B are two points on a line a, and A' is a point on the same or on another line a' then it is always possible to find a point B' on a given side of the line a' through A' such that the segment AB is congruent or equal to the segment A'B'. In symbols AB = A'B'.
-    2. If a segment A'B' and a segment A"B", are congruent to the same segment AB, then the segment A'B' is also congruent to the segment A"B", or briefly, if two segments are congruent to a third one they are congruent to each other.
-    3. On the line a let AB and BC be two segments which except for B have no point in common. Furthermore, on the same or on another line a' let A'B' and B'C' be two segments which except for B' also have no point in common. In the case, if AB = A'B' and BC = B'C' then AC = A'C'.
-    4. Let angle(h,k) be an angle in a plane [alpha] and a' a line in a plane [alpha]' and let a definite side of a' in [alpha]' be given. Let h' be a ray on the line a' that emanates from the point O'. Then there exists in the plane [alpha]' one and only one ray k' such that the angle(h,k) is congruent or equal to the angle(h',k') and at the same time all interior point of the angle(h',k') lie on the given side of a'. Symbolically angle(h,k) = angle(h',k'). Every angle is congruent to itself, i.e., angle(h,k) = angle(h,k) is always true.
-    5. If for two triangles ABC and A'B'C' the congruences AB = A'B', AC = A'C', angleBAC = angleB'A'C' hold, then the congruence angleABC = angleA'B'C' is also satisfied.
+    1. If $A, B$ are two points on a line $a$, and $A'$ is a point on the same or on another line $a'$ then it is always possible to find a point $B'$ on a given side of the line $a'$ through $A'$ such that the segment $AB$ is congruent or equal to the segment $A'B'$. In symbols $AB = A'B'$.
+    2. If a segment $A'B'$ and a segment $A"B"$, are congruent to the same segment $AB$, then the segment $A'B'$ is also congruent to the segment $A"B"$, or briefly, if two segments are congruent to a third one they are congruent to each other.
+    3. On the line $a$ let $AB$ and $BC$ be two segments which except for $B$ have no point in common. Furthermore, on the same or on another line $a'$ let A'B' and B'C' be two segments which except for $B'$ also have no point in common. In the case, if $AB = A'B'$ and $BC = B'C'$ then $AC = A'C'$.
+    4. Let $\angle(h,k)$ be an angle in a plane $\alpha$ and $a'$ a line in a plane $\alpha'$ and let a definite side of $a'$ in $\alpha'$ be given. Let $h'$ be a ray on the line $a'$ that emanates from the point $O'$. Then there exists in the plane $\alpha'$ one and only one ray $k'$ such that the $\angle(h,k)$ is congruent or equal to the $\angle(h',k')$ and at the same time all interior point of the $\angle(h',k')$ lie on the given side of $a'$. Symbolically $\angle(h,k) = \angle(h',k')$. Every angle is congruent to itself, i.e., $\angle(h,k) = \angle(h,k)$ is always true.
+    5. If for two triangles $ABC$ and $A'B'C'$ the congruences $AB = A'B', AC = A'C', \angle BAC = \angle B'A'C'$ hold, then the congruence $\angle ABC = \angle A'B'C'$ is also satisfied.
 4. Axiom of Parallels:
-    1. (Euclid's Axiom) Let a be any line and A a point not on it. Then there is at most one line in the plane, determined by a and A, that passes through A and does not intersect a.
+    1. (Euclid's Axiom) Let $a$ be any line and $A$ a point not on it. Then there is at most one line in the plane, determined by $a$ and $A$, that passes through $A$ and does not intersect $a$.
 5. Axioms of Continuity:
-    1. (Archimedes' Axiom or Axiom of Measure) If AB and CD are any segments, then there exists a number n such that n segments CD constructed contiguously from A, along the ray from A through B, will pass beyond the point B.
+    1. (Archimedes' Axiom or Axiom of Measure) If $AB$ and $CD$ are any segments, then there exists a number $n$ such that $n$ segments $CD$ constructed contiguously from $A$, along the ray from $A$ through $B$, will pass beyond the point $B$.
     2. (Axiom of Line Completeness) An extension of a set of points on a line with its order and congruence relations that would preserve the relations existing among the original elements as well as the fundamental properties of line order and congruence that follow from Axioms I-III, and from V,1 is impossible.
     
 Given Kant's view of geometry, however, the Euclidean distinction could be restored:  "axioms" would be analytic propositions, and "postulates" synthetic. Whether any of Euclid's original axioms are analytic is a good question. We can see that Hilbert's axiomatic system is logically a much more rigorous system than Euclid's.
 
-### Zermelo-Fraenkel Axiomatic System
+## Zermelo-Fraenkel Axiomatic System
 
 The axiomatic system of set theory as we know it today was in large part developed in the period of 1908 to 1922 by Enst Zermelo and Abraham Fraenkel to formulate a theory of sets free of the paradoxes such as Russel's paradox. Mathematicians T. Skolem and John von Neumann made slight modifications to these a few years later.
 
@@ -115,7 +113,7 @@ The metamathematics of Zermelo–Fraenkel set theory has been extensively studie
 
 Formally, ZFC is a one-sorted theory in first-order logic. The signature has equality and a single primitive binary relation, set membership, which is usually denoted $\in$. The formula $a \in b$ means that the set $a$ is a member of the set $b$ (which is also read, "$a$ is an element of $b$" or "$a$ is in $b$").
 
-### Primitive concepts and notation
+## Primitive concepts and notation
 
 What makes a set of primitive concepts and axioms suitable for a particular theory? Most will agree that these must satisfy the following conditions:
 
@@ -140,7 +138,7 @@ Why is "element" not an undefined notion? It may be surprising that the object e
 - rational numbers $a/b$ can be described as the set of all two-element sets $\{a, b\}$ of integers in a particular order where $b \ne 0$.
 - irrational numbers can be viewed as infinite sequences of rational numbers converging to a non-rational number, again a set
 
-### Axiomatic Set Theory
+## Axiomatic Set Theory
 
 These are called the ZF axioms. At this point, much of these will look like gibberish but as we progress, we will step by step develop a better understanding of whaat they mean.
 
@@ -162,7 +160,7 @@ Notes:
 - Axioms A2 to A7 are constructive axioms. A2 gives us a way to construct a class by referring to a property. Axioms A3 to A7 provide a method to construct new sets from ones that are known to exist. Axiom 
 - Axiom 9 is sometimes referred to as the useless axiom. Others don't consider it as a basic axiom since most mathematics which is based on set theory does not require it. However, although it is not obvious, this axiom states that "those empty classes which dont have a least element are not sets". It is in fact an axiom that does not allow certain types of sets to exist in the universe of sets. It is of an exclusionary nature. The other axioms except A1 increase the number of sets in the universe of sets.
 
-### Axiom of Choice
+## Axiom of Choice
 
 Another special axiom is usually stated separately from the other nine axioms above. It is viewed by many as being different in nature. It was also quite controversial.
 
