@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  jupyterlab:
+    image: jervenclark/jupyterlab:latest
+    ports:
+      - 9999:8888
+    volumes:
+      - ./:/notebooks
